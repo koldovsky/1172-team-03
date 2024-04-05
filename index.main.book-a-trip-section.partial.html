@@ -6,30 +6,51 @@
     <title>Document</title>
   </head>
   <body>
-    <section>
-      <h2>Book a Trip to PagleWaters Resort!</h2>
-      <p>. . . .</p>
-      <div>
+    <section class="book-a-trip__section">
+      <h2 class="book-a-trip__title">Book a Trip to PagleWaters Resort!</h2>
+      <p class="book-a-trip__decor">. . . .</p>
+      <div class="book-a-trip__form">
         <form action="#" method="post">
-          <input type="text" name="name" placeholder="Name*" />
-          <input type="tel" name="phone" placeholder="Phone number*" />
-          <input type="email" name="email" placeholder="Email*" />
+          <input
+            type="text"
+            class="book-a-trip__input"
+            name="name"
+            placeholder="Name*"
+          />
+          <input
+            type="tel"
+            class="book-a-trip__input"
+            name="phone"
+            placeholder="Phone number*"
+          />
+          <input
+            type="email"
+            class="book-a-trip__input"
+            name="email"
+            placeholder="Email*"
+          />
           <textarea
             name="message"
+            class="book-a-trip__textarea"
             cols="30"
             rows="10"
             placeholder="Message"
           ></textarea>
-          <input type="submit" value="Book a trip" />
+          <input
+            type="submit"
+            class="book-a-trip__submit"
+            value="Book a trip"
+          />
         </form>
       </div>
       <div>
+        <!-- Attribute width is temporary -->
         <img
+          class="book-a-trip__image"
           src="image/main.book-trip/book-trip-crab.jpg"
           alt="Crab image"
           width="596"
         />
-        <!-- Attribute width is temporary -->
       </div>
     </section>
   </body>
