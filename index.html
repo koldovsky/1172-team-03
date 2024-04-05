@@ -13,15 +13,29 @@
     ></script>
   </head>
   <body>
-    <header>
-      <!-- Illya Ovsiannikov -->
-      <!-- Arsenii Redko -->
-      <!-- Zhanna Orshuliak -->
-      <!--Maksym Pyvovarov-->
-      <!--Bohdan Mysko-->
-      <!--Hushul Roman-->
-    </header>
-    <main></main>
-    <footer></footer>
+    <!-- Illya Ovsiannikov -->
+    <!-- Arsenii Redko -->
+    <!-- Zhanna Orshuliak -->
+    <!--Maksym Pyvovarov-->
+    <!--Bohdan Mysko-->
+    <!--Hushul Roman-->
+
+    <header
+      data-hx-trigger="load"
+      data-hx-swap="outerHTML"
+      data-hx-get="index.header.partial.html"
+    ></header>
+    <main>
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="index.main-join-us.partial.html"
+      ></section>
+    </main>
+    <footer
+      data-hx-trigger="load"
+      data-hx-swap="outerHTML"
+      data-hx-get="index.footer.partial.html"
+    ></footer>
   </body>
 </html>
