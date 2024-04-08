@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  scroll-behavior: smooth;
+  font-family: "Noto Sans", sans-serif;
+
+  --text-color: #263a4f;
+  --text-color-light: #fff;
+  --text-brend: #52acfe;
+  --text-accent-color: #3e556c;
+  --text-info: rgb(162,200,237);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Merriweather", serif;
+}
+
+img {
+  display: block;
+  width: 100%;
+}

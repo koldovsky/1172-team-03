@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PagleWaters</title>
     <link rel="shortcut icon" href="image/fish-icon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="css/index.css" />
     <script
       src="https://unpkg.com/htmx.org@1.9.10"
       integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
@@ -13,18 +14,91 @@
     ></script>
   </head>
   <body>
-    <header>
-      <!-- Illya Ovsiannikov -->
-      <!-- Arsenii Redko -->
-      <!-- Zhanna Orshuliak -->
-      <!--Maksym Pyvovarov-->
-      <!--Bohdan Mysko-->
-      <!--Hushul Roman-->
-      <!--Oleksiy Zinnyk-->
-      <!--Samus Vadim-->
-    </header>
-    
-    <main></main>
-    <footer></footer>
+    <!-- Illya Ovsiannikov -->
+    <!-- Arsenii Redko -->
+    <!-- Zhanna Orshuliak -->
+    <!--Maksym Pyvovarov-->
+    <!--Bohdan Mysko-->
+    <!--Hushul Roman-->
+    <!--Oleksiy Zinnyk-->
+    <!--Viktoria Rychenko-->
+    <!--Artem Rodionov-->
+
+    <header
+      data-hx-trigger="load"
+      data-hx-swap="outerHTML"
+      data-hx-get="index.header.partial.html"
+    ></header>
+    <main class="main">
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="index.main.join-us-section.partial.html"
+      ></section>
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="index.main.book-now-section.partial.html"
+      ></section>
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="index.main.welcome-to-paglewaters.partial.html"
+      ></section>
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="index.main.activities-and-kinds-of-services.partial.html"
+      ></section>
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="index.main.events.partial.html"
+      ></section>
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="index.main.packages.partial.html"
+      ></section>
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="index.main.about-our-club-and-resort.partial.html"
+      ></section>
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="index.main.our-resort-section.partial.html"
+      ></section>
+      <section>
+        data-hx-trigger="load" data-hx-swap="outerHTML"
+        data-hx-get="index.main.carousel-section.partial.html"
+      </section>
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="index.main.gallery-section.partial.html"
+      ></section>
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="index.main.carousel-testimonials.partial.html"
+      ></section>
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="index.main.membership-permissions-section.partial.html"
+      ></section>
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="index.main.book-a-trip-section.partial.html"
+      ></section>
+    </main>
+    <footer
+      data-hx-trigger="load"
+      data-hx-swap="outerHTML"
+      data-hx-get="index.footer.partial.html"
+    ></footer>
   </body>
 </html>
