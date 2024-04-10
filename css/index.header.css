@@ -4,7 +4,6 @@ header {
   justify-content: space-between;
 
   .header__logo {
-    padding: 20px 0;
     font-family: "Francois One", sans-serif;
     font-size: 38px;
     font-weight: 400;
@@ -55,6 +54,10 @@ header {
   .header__nav {
     display: none;
   }
+
+  .header__logo {
+    padding: 20px 24px;
+  }
 }
 
 @media (min-width: 990px) {
@@ -62,6 +65,7 @@ header {
     flex-direction: column;
 
     .header__logo {
+      padding: 20px 0;
       text-align: center;
     }
 
