@@ -1,6 +1,12 @@
 .paglewaters__title {
   font-size: 32px;
+  color: rgb(38, 58, 79);
+}
+.paglewaters__blue-text-title {
+  font-size: 32px;
+  color: rgb(82, 172, 254);
 }
 .paglewaters__text {
   font-size: 18px;
+  color: rgb(38, 58, 79);
 }
