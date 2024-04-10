@@ -1,0 +1,109 @@
+.our-resort__section {
+  background-color: var(--background-dark-color);
+  display: flex;
+  justify-content: center;
+  padding: 75px 24px 85px 24px;
+  .our-resort__title {
+    color: var(--text-color);
+    font-size: 30px;
+    padding-bottom: 22px;
+  }
+  .our-resort__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1170px;
+  }
+}
+
+.our-resort__decor {
+  display: flex;
+  justify-content: space-between;
+  width: 36px;
+  height: 5px;
+  margin-bottom: 30px;
+  .our-resort__decor-item {
+    background-color: var(--text-brend);
+    width: 5px;
+  }
+}
+
+.our-resort__items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.our-resort__item {
+  width: 100%;
+  margin: 45px 0;
+
+  .our-resort__content-container {
+    background-color: var(--text-color-light);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+    padding: 29px 27px;
+  }
+
+  .our-resort__item-icon-container {
+    background-color: var(--text-accent-color);
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    position: absolute;
+    top: -35px;
+  }
+  .our-resort__item-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .our-resort__item-title {
+    font-size: 22px;
+    color: var(--text-color);
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+
+  .our-resort__item-description {
+    font-size: 16px;
+    color: var(--text-color);
+    text-align: center;
+    letter-spacing: normal;
+    line-height: 24px;
+  }
+
+  .dark {
+    background-color: var(--text-color);
+
+    .our-resort__item-title {
+      color: var(--text-color-light);
+    }
+    .our-resort__item-description {
+      color: var(--text-color-light);
+    }
+  }
+}
+@media (min-width: 768px) {
+  .our-resort__item {
+    width: 45%;
+  }
+
+  .our-resort__content-container {
+    height: 100%;
+  }
+}
+
+@media (min-width: 992px) {
+  .our-resort__item {
+    width: 30%;
+  }
+}

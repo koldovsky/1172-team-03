@@ -1,12 +1,19 @@
 .book-now__paragraph {
   font-size: 32px;
+  color: #263a4f;
 }
 .book-now__countdown-description {
   font-size: 27px;
+  color: #263a4f;
 }
 .book-now__expire-date {
   font-size: 18px;
+  color: #263a4f;
 }
 .book-now__get-deal-btn {
+  display: inline-block;
   font-size: 14px;
+  padding: 7px 25px;
+  text-decoration: none;
+  background-color: rgb(0, 204, 255);
 }

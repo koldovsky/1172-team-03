@@ -1,0 +1,112 @@
+.book-a-trip__section {
+  background-color: var(--text-color-light);
+  display: flex;
+  flex-direction: column;
+}
+
+.book-a-trip__container {
+  padding: 85px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .book-a-trip__title {
+    color: var(--text-color);
+    font-size: 30px;
+    text-align: center;
+    letter-spacing: -0.63px;
+    line-height: 35.4px;
+  }
+}
+
+.book-a-trip__description {
+  color: var(--text-color);
+  font-size: 18px;
+  text-align: center;
+  letter-spacing: normal;
+  line-height: 27px;
+  margin-bottom: 25px;
+}
+
+.book-a-trip__decor {
+  display: flex;
+  justify-content: space-between;
+  width: 36px;
+  height: 5px;
+  margin: 15px 0 20px 0;
+  .book-a-trip__decor-item {
+    background-color: var(--text-brend);
+    width: 5px;
+  }
+}
+
+.book-a-trip__textarea,
+.book-a-trip__input {
+  width: 100%;
+  background-color: var(--input-background-color);
+  border: 0;
+  color: var(--text-color);
+  margin: 12px 0;
+  padding: 14px 40px;
+  border-radius: 3px;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Noto Sans", sans-serif;
+  opacity: 0.8;
+}
+
+.book-a-trip__textarea:focus,
+.book-a-trip__input:focus {
+  border: 2px solid var(--text-brend);
+  outline: none;
+}
+
+.book-a-trip__textarea {
+  resize: none;
+  height: 122px;
+}
+
+.book-a-trip__submit {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 14px;
+  color: var(--text-color-light);
+  background-color: var(--text-brend);
+  border: 0;
+  width: 100%;
+  padding: 14px 40px;
+  margin-top: 56px;
+  /*height: 38px;*/
+  border-radius: 3px;
+  box-shadow: 0px 4px 8px var(--shadow-color);
+}
+
+.book-a-trip__image {
+  width: 100%;
+  height: 60vw;
+  object-fit: cover;
+  object-position: center;
+}
+
+@media (min-width: 768px) {
+  .book-a-trip__section {
+    flex-direction: row;
+    .book-a-trip__title {
+      font-size: 32px;
+    }
+  }
+  .book-a-trip__container {
+    max-width: 570px;
+    padding: 85px 50px;
+    margin: 0 auto;
+  }
+  .book-a-trip__block {
+    width: 50%;
+  }
+  .book-a-trip__image-container {
+    width: 50%;
+    .book-a-trip__image {
+      height: 100%;
+      max-height: 840px;
+    }
+  }
+}
