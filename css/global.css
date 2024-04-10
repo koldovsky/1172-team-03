@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Francois+One&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 * {
   margin: 0;
@@ -10,11 +10,20 @@
   scroll-behavior: smooth;
   font-family: "Noto Sans", sans-serif;
 
+  --xs-width-size: 425px;
+  --md-width-size: 768px; 
+  --lg-width-size: 990px;
+
+  --container-size: 1200px;
+  --content-padding: 32px;
+  
   --text-color: #263a4f;
   --text-color-light: #fff;
   --text-brend: #52acfe;
   --text-accent-color: #3e556c;
-  --text-info: rgb(162,200,237);
+  --text-info: rgb(162, 200, 237);
+
+  --bg-color-btn-primary: #52acfe; 
 }
 
 h1,
@@ -27,4 +36,11 @@ h4 {
 img {
   display: block;
   width: 100%;
+}
+
+.container {
+  width: 100%;
+  max-width: var(--container-size);
+  margin: 0 auto;
+  padding: 0 var(--content-padding);
 }
