@@ -22,3 +22,16 @@
   margin-left: 15px;
   margin-right: 15px;
 }
+.paglewaters__dots {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+  width: 36px;
+  height: 5px;
+  margin-bottom: 30px;
+  .paglewaters__dots__dots-decoration {
+    background-color: var(--text-brend);
+    width: 5px;
+  }
+}
