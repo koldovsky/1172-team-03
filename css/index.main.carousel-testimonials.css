@@ -1,7 +1,6 @@
 .testimonials {
-  background-image: url(../image/main.testimonials/background.png);
-  background-size: cover;
-  background-position: center;
+  background: no-repeat 50% 50% / cover
+    url(../image/main.testimonials/background.png);
   min-width: 320px;
   padding-top: 70px;
   padding-bottom: 85px;
