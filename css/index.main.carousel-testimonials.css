@@ -14,13 +14,26 @@
     padding-right: 24px;
     margin: 0 auto;
 
-    h2 {
-      font-size: 30px;
-    }
+    .testimonials__header {
+      margin-bottom: 30px;
 
-    h3 {
-      font-size: 22px;
-      margin-top: 20px;
+      .testimonials__title {
+        font-size: 30px;
+        padding-bottom: 14px;
+      }
+
+      .testimonials__title-dots {
+        display: flex;
+        justify-content: space-between;
+        width: 36px;
+        height: 5px;
+        margin: auto;
+
+        .testimonials__title-dots-decoration {
+          background-color: var(--text-brend);
+          width: 5px;
+        }
+      }
     }
 
     .testimonials__carousel-container {
@@ -41,6 +54,11 @@
           line-height: 1.5;
           font-size: 16px;
 
+          .client__name {
+            font-size: 22px;
+            margin-top: 20px;
+          }
+
           .client__image {
             width: 100px;
             height: auto;
@@ -52,18 +70,56 @@
         }
       }
     }
+
+    .testimonials__button {
+      display: inline-block;
+      position: relative;
+      text-decoration: none;
+      font-size: 14px;
+      margin-top: 50px;
+      border: 2px solid;
+      color: var(--bg-color-btn-primary);
+      width: 160px;
+      border-radius: 3px;
+      max-width: 100%;
+      cursor: pointer;
+
+      .testimonials__button-text {
+        color: var(--text-color);
+      }
+
+      .testimonials__button-text:hover {
+        color: var(--bg-color-btn-primary);
+      }
+
+      .testimonials__button-text:active {
+        color: var(--text-color-light);
+      }
+    }
+
+    .testimonials__button:active {
+      background-color: var(--text-brend);
+    }
   }
 }
 
 @media (min-width: 767px) {
   .testimonials {
     .testimonials__container {
-      h2 {
-        font-size: 32px;
+      .testimonials__header {
+        .testimonials__title {
+          font-size: 32px;
+        }
       }
 
-      h3 {
-        font-size: 24px;
+      .testimonials__carousel-container {
+        .testimonials__clients {
+          .testimonials__client {
+            .client__name {
+              font-size: 24px;
+            }
+          }
+        }
       }
     }
   }
@@ -75,12 +131,20 @@
       padding-left: 0;
       padding-right: 0;
 
-      h2 {
-        font-size: 34px;
+      .testimonials__header {
+        .testimonials__title {
+          font-size: 34px;
+        }
       }
 
-      h3 {
-        font-size: 26px;
+      .testimonials__carousel-container {
+        .testimonials__clients {
+          .testimonials__client {
+            .client__name {
+              font-size: 26px;
+            }
+          }
+        }
       }
     }
   }
