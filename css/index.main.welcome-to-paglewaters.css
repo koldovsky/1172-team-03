@@ -1,12 +1,24 @@
+.paglewaters {
+  text-align: center;
+  background-color: var(--background-dark-color);
+  padding-top: 75px;
+  padding-bottom: 75px;
+}
 .paglewaters__title {
   font-size: 32px;
-  color: rgb(38, 58, 79);
+  color: var(--text-color);
+  padding-bottom: 28px;
 }
 .paglewaters__blue-text-title {
   font-size: 32px;
-  color: rgb(82, 172, 254);
+  color: var(--text-brend);
 }
 .paglewaters__text {
   font-size: 18px;
-  color: rgb(38, 58, 79);
+  color: var(--text-color);
+  margin-top: 24px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: 15px;
+  margin-right: 15px;
 }
