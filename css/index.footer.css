@@ -164,9 +164,10 @@
       }
 
       .footer__social {
-        flex: 1;
+        flex: 0.7;
 
-        .footer__social-title {
+        .footer__social-title,
+        .footer__social-buttons {
           align-self: end;
         }
       }
