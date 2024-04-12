@@ -23,8 +23,10 @@
   --text-brend: #52acfe;
   --text-accent-color: #3e556c;
   --text-info: rgb(162, 200, 237);
-  --bg-color-btn-primary: #52acfe; 
+  --bg-color-btn-primary: #52acfe;
+  --bg-color-black: rgb(32, 43, 56);
   --background-dark-color: #e5ecf3;
+  --border-white: #fff;
   --input-background-color: rgba(38, 58, 79, 0.12);
   --shadow-color: rgba(6, 9, 12, 0.5);
 
