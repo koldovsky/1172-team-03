@@ -12,7 +12,7 @@
 
 .gallery__images {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(302px, 1fr));
   row-gap: 50px;
   margin-top: 40px;
 
