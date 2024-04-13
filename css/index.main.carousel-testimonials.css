@@ -72,33 +72,8 @@
     }
 
     .testimonials__button {
-      display: inline-block;
-      position: relative;
-      text-decoration: none;
-      font-size: 14px;
       margin-top: 50px;
-      border: 2px solid;
-      color: var(--bg-color-btn-primary);
-      width: 160px;
-      border-radius: 3px;
-      max-width: 100%;
-      cursor: pointer;
-
-      .testimonials__button-text {
-        color: var(--text-color);
-      }
-
-      .testimonials__button-text:hover {
-        color: var(--bg-color-btn-primary);
-      }
-
-      .testimonials__button-text:active {
-        color: var(--text-color-light);
-      }
-    }
-
-    .testimonials__button:active {
-      background-color: var(--text-brend);
+      width: 180px;
     }
   }
 }
