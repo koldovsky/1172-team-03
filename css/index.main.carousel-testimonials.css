@@ -8,7 +8,6 @@
   .testimonials__container {
     text-align: center;
     min-width: 320px;
-    max-width: 740px;
     color: var(--text-color);
     padding-left: 24px;
     padding-right: 24px;
@@ -37,15 +36,45 @@
     }
 
     .testimonials__carousel-container {
-      .testimonials__button-left {
-        width: 20px;
-      }
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 0 24px;
 
-      .testimonials__button-right {
-        width: 20px;
+      .testimonials__buttons {
+        margin-bottom: 20px;
+
+        .testimonials__button {
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          border: none;
+          border-radius: 50%;
+          background-color: var(--bg-color-btn-dark);
+          width: 24px;
+          height: 24px;
+          padding: 6px;
+          cursor: pointer;
+          fill: var(--svg-btn-color);
+
+          &:hover {
+            opacity: 0.85;
+            transition: opacity 0.2s ease-out;
+          }
+        }
+        .testimonials__button-prev {
+          left: 0%;
+        }
+
+        .testimonials__button-next {
+          right: 0%;
+        }
       }
 
       .testimonials__clients {
+        max-width: 580px;
+
         .testimonials__client {
           display: flex;
           justify-content: center;
@@ -60,14 +89,38 @@
           }
 
           .client__image {
-            width: 100px;
-            height: auto;
+            background-size: cover;
+            background-position: center;
+            border-radius: 50%;
+            width: 70px;
+            height: 70px;
+            overflow: hidden;
+          }
+
+          .client__image-1 {
+            background-image: url(../image/main.testimonials/michael-crabs.jpg);
+          }
+
+          .client__image-2 {
+            background-image: url(../image/main.testimonials/scott-ridley.jpg);
+          }
+
+          .client__image-3 {
+            background-image: url(../image/main.testimonials/garry-norris.jpg);
+            background-position: 0% 50%;
           }
 
           .client__text {
             margin-top: 20px;
           }
         }
+        .client__no-display {
+          display: none;
+        }
+      }
+
+      .dots-wrapper {
+        margin-top: auto;
       }
     }
 
@@ -88,10 +141,22 @@
       }
 
       .testimonials__carousel-container {
+        .testimonials__buttons {
+          .testimonials__button {
+            width: 32px;
+            height: 32px;
+          }
+        }
+
         .testimonials__clients {
           .testimonials__client {
             .client__name {
               font-size: 24px;
+            }
+
+            .client__image {
+              width: 120px;
+              height: 120px;
             }
           }
         }
@@ -103,9 +168,6 @@
 @media (min-width: 991px) {
   .testimonials {
     .testimonials__container {
-      padding-left: 0;
-      padding-right: 0;
-
       .testimonials__header {
         .testimonials__title {
           font-size: 34px;
@@ -114,6 +176,7 @@
 
       .testimonials__carousel-container {
         .testimonials__clients {
+          max-width: 740px;
           .testimonials__client {
             .client__name {
               font-size: 26px;
@@ -125,11 +188,27 @@
   }
 }
 
-@media (min-width: 992px) {
+
+@media (min-width: 1199px) {
   .testimonials {
     .testimonials__container {
-      padding-left: 0;
-      padding-right: 0;
+      .testimonials__carousel-container {
+        .testimonials__buttons {
+          .testimonials__button {
+            background-color: transparent; 
+            width: 44px; 
+            height: 44px; 
+            padding: 7px; 
+            fill: var(--bg-color-btn-primary);
+            opacity: 0.85;
+
+            &:hover {
+              opacity: 1;
+              transition: opacity 0.2s ease-out;
+            }
+          }
+        }
+      }
     }
   }
 }

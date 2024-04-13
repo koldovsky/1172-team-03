@@ -13,7 +13,7 @@
   <body>
     <section class="testimonials">
       <div class="testimonials__container container">
-        <div class="testimonials__header" >
+        <div class="testimonials__header">
           <h2 class="testimonials__title">Testimonials</h2>
           <div class="testimonials__title-dots">
             <div class="testimonials__title-dots-decoration"></div>
@@ -22,29 +22,50 @@
             <div class="testimonials__title-dots-decoration"></div>
           </div>
         </div>
+
         <div class="testimonials__carousel-container">
-          <button class="testimonials__button-left">
-            <svg class="arrow-svg_1j4" viewBox="0 0 30 30">
-              <defs>
-                <path
-                  d="M10.467 15l9.1-9.45c.577-.6.577-1.5 0-2.1-.578-.6-1.445-.6-2.023 0l-10.11 10.5c-.29.3-.434.75-.434 1.05 0 .45.144.75.433 1.05l10.111 10.5c.29.3.578.45 1.012.45.433 0 .722-.15 1.01-.45.578-.6.578-1.5 0-2.1l-9.1-9.45z"
-                  id="a-1712081013276-left"
-                ></path>
-              </defs>
-              <use
-                fill-rule="nonzero"
-                opacity=".8"
-                xlink:href="#a-1712081013276-left"
-              ></use>
-            </svg>
-          </button>
+          <div class="testimonials__buttons">
+            <button class="testimonials__button testimonials__button-prev">
+              <svg class="arrow-left" viewBox="0 0 30 30">
+                <defs>
+                  <path
+                    d="M10.467 15l9.1-9.45c.577-.6.577-1.5 0-2.1-.578-.6-1.445-.6-2.023 0l-10.11 10.5c-.29.3-.434.75-.434 1.05 0 .45.144.75.433 1.05l10.111 10.5c.29.3.578.45 1.012.45.433 0 .722-.15 1.01-.45.578-.6.578-1.5 0-2.1l-9.1-9.45z"
+                    id="a-1712081013276-left"
+                  ></path>
+                </defs>
+                <use
+                  fill-rule="nonzero"
+                  opacity=".8"
+                  xlink:href="#a-1712081013276-left"
+                ></use>
+              </svg>
+            </button>
+
+            <button class="testimonials__button testimonials__button-next">
+              <svg class="arrow-right" viewBox="0 0 30 30">
+                <defs>
+                  <path
+                    d="M19.533 15l-9.1-9.45c-.577-.6-.577-1.5 0-2.1.578-.6 1.445-.6 2.023 0l10.11 10.5c.29.3.434.75.434 1.05 0 .45-.144.75-.433 1.05l-10.111 10.5c-.29.3-.578.45-1.012.45-.433 0-.722-.15-1.01-.45-.578-.6-.578-1.5 0-2.1l9.1-9.45z"
+                    id="a-1712081013276-right"
+                  ></path>
+                </defs>
+                <use
+                  fill-rule="nonzero"
+                  opacity=".8"
+                  xlink:href="#a-1712081013276-right"
+                ></use>
+              </svg>
+            </button>
+          </div>
+
           <div class="testimonials__clients">
             <div class="testimonials__client">
-              <img
+              <div class="client__image client__image-1"></div>
+              <!-- <img
                 class="client__image"
                 src="image/main.testimonials/michael-crabs.jpg"
                 alt="Client Michael Crabs image"
-              />
+              /> -->
               <h3 class="client__name">Michael Crabs</h3>
               <p class="client__text">
                 "I've traveled to many resorts around the world in search of the
@@ -57,12 +78,13 @@
                 this resort to everyone!"
               </p>
             </div>
-            <div class="testimonials__client">
-              <img
+            <div class="testimonials__client client__no-display">
+              <div class="client__image client__image-2"></div>
+              <!-- <img
                 class="client__image"
                 src="image/main.testimonials/scott-ridley.jpg"
                 alt="Client Scott Ridley image"
-              />
+              /> -->
               <h3 class="client__name">Scott Ridley</h3>
               <p class="client__text">
                 “We have got a second to none service from Jack and his crew
@@ -73,12 +95,13 @@
                 amazing ocean view. Much thanks for the great time!”
               </p>
             </div>
-            <div class="testimonials__client">
-              <img
+            <div class="testimonials__client client__no-display">
+              <div class="client__image client__image-3"></div>
+              <!-- <img
                 class="client__image"
                 src="image/main.testimonials/garry-norris.jpg"
                 alt="Client Garry Norris image"
-              />
+              /> -->
               <h3 class="client__name">Garry Norris</h3>
               <p class="client__text">
                 “PagleWaters Club & Resort fully exceeded my expectations in
@@ -91,30 +114,18 @@
                 adventure! I will definitely come back!”
               </p>
             </div>
-            <div class="dots-wrapper">
-              <span class="dot active">.</span>
-              <span class="dot">.</span>
-              <span class="dot">.</span>
-            </div>
           </div>
-          <button class="testimonials__button-right">
-            <svg class="arrow-svg_1j4" viewBox="0 0 30 30">
-              <defs>
-                <path
-                  d="M19.533 15l-9.1-9.45c-.577-.6-.577-1.5 0-2.1.578-.6 1.445-.6 2.023 0l10.11 10.5c.29.3.434.75.434 1.05 0 .45-.144.75-.433 1.05l-10.111 10.5c-.29.3-.578.45-1.012.45-.433 0-.722-.15-1.01-.45-.578-.6-.578-1.5 0-2.1l9.1-9.45z"
-                  id="a-1712081013276-right"
-                ></path>
-              </defs>
-              <use
-                fill-rule="nonzero"
-                opacity=".8"
-                xlink:href="#a-1712081013276-right"
-              ></use>
-            </svg>
-          </button>
+
+          <div class="dots-wrapper">
+            <span class="dot active">.</span>
+            <span class="dot">.</span>
+            <span class="dot">.</span>
+          </div>
         </div>
         <div class="testimonials__footer">
-          <a href="#" class="button-secondary testimonials__button button_md"><span class="testimonials__button-text">All Testimonials</span></a>
+          <a href="#" class="button-secondary testimonials__button button_md"
+            ><span class="testimonials__button-text">All Testimonials</span></a
+          >
         </div>
       </div>
     </section>
