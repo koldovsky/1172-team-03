@@ -8,27 +8,35 @@
   <body>
     <section class="gallery">
       <div class="container">
-        <div class="gallery__header">
-          <h2 class="gallery__title">Gallery</h2>
-          <p class="gallery__description">
-            <span class="text-block text-center">
-              <span
-                >No matter what type of fishing you prefer, PagleWaters Resort
-                is</span
-              >
-            </span>
-            <span class="text-block text-center">
-              <span
-                >a wonderful place to spend time with your best friends.</span
-              >
-            </span>
-          </p>
-        </div>
-        <div class="gallery__images gallery__images-inner">
+        <header class="gallery__header">
+          <div class="gallery__header-inner">
+            <h2 class="header-item gallery__title">Gallery</h2>
+            <div class="gallery__title-decore decore">
+              <div class="decore__item"></div>
+              <div class="decore__item"></div>
+              <div class="decore__item"></div>
+              <div class="decore__item"></div>
+            </div>
+            <p class="header-item gallery__description">
+              <span class="text-block text-center">
+                <span
+                  >No matter what type of fishing you prefer, PagleWaters Resort
+                  is</span
+                >
+              </span>
+              <span class="text-block text-center">
+                <span
+                  >a wonderful place to spend time with your best friends.</span
+                >
+              </span>
+            </p>
+          </div>
+        </header>
+        <main class="gallery__images gallery__images-inner">
           <article class="gallery__item item">
             <div class="item__inner">
               <img
-                class="gallery__image test"
+                class="gallery__image"
                 src="image/main.gallery/photo-of-fishing1.webp"
                 alt="A man shows off a small aliwife he caught"
               />
@@ -79,10 +87,12 @@
               />
             </div>
           </article>
-        </div>
-        <div class="gallery__footer">
-          <a class="gallery__link" href="index.html">All photos</a>
-        </div>
+        </main>
+        <footer class="gallery__footer">
+          <a class="button-secondary button_md gallery__link" href="index.html"
+            ><span class="testimonials__button-text">All photos</span></a
+          >
+        </footer>
       </div>
     </section>
   </body>
