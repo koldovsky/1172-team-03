@@ -1,0 +1,25 @@
+.membership-permissions {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--bg-color-white);
+    padding: 90px 24px;
+}   
+
+.membership-permissions__title {
+    text-align: left;
+    font-size: 30px;
+    color: var(--text-color);
+}
+
+.membership-permissions__paragraph{
+    /*Чи варто додавати змінну для кольору тексту в global.css якщо цей колір унікальний лише для окремої секції?*/
+    margin-top: 18px;
+}
+
+.membership-permissions__button {
+    margin-top: 35px;
+}
+
+.membership-permissions__photo-container {
+    margin-top: 50px;
+}
