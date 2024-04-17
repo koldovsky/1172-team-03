@@ -1,8 +1,8 @@
 .join-us {
   background-size: cover;
-  background:
-    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(../image/main.join-us/join-us-baner.webp) center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../image/main.join-us/join-us-baner.webp);
+  background-position: center;
   padding: 130px 24px;
 
   .join-us__container {
