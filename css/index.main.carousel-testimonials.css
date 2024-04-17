@@ -44,6 +44,7 @@
 
       .testimonials__buttons {
         margin-bottom: 20px;
+        width: 180px;
 
         .testimonials__button {
           position: absolute;
