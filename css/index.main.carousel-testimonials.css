@@ -43,7 +43,6 @@
 
       .testimonials__buttons {
         margin-bottom: 20px;
-        width: 180px;
 
         .testimonials__button {
           position: absolute;
@@ -150,8 +149,13 @@
       }
     }
 
-    .testimonials__button {
-      margin-top: 50px;
+    
+
+    .testimonials__footer {
+      .testimonials__button-all {
+        margin-top: 50px;
+        width: 180px;
+      }
     }
   }
 }
