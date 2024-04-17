@@ -1,8 +1,9 @@
 .join-us {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
-  background-image: url(../image/main.join-us/join-us-baner.webp);
   background-size: cover;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../image/main.join-us/join-us-baner.webp);
   background-position: center;
+  padding: 130px 24px;
 
   .join-us__container {
     display: flex;
@@ -12,6 +13,7 @@
   }
 
   .join-us__title {
+    font-size: 46px;
     font-weight: 400;
     color: var(--text-color-light);
     text-align: center;
@@ -31,17 +33,15 @@
   }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 425px) {
   .join-us {
-    padding: 130px 24px;
-
     .join-us__title {
-      font-size: 60px;
+      font-size: 68px;
     }
   }
 }
 
-@media (min-width: 768px) and (max-width: 990px) {
+@media (min-width: 768px) {
   .join-us {
     padding: 250px 24px;
 
