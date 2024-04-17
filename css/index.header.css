@@ -6,7 +6,7 @@
 
   .header__logo {
     font-family: "Francois One", sans-serif;
-    font-size: 27px;
+    font-size: 22px;
     font-weight: 400;
 
     .header__logo-link {
@@ -59,6 +59,9 @@
 @media (min-width: 290px) {
   .header {
     flex-wrap: unset;
+    .header__logo {
+      font-size: 26px;
+    }
   }
 }
 
