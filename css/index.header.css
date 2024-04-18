@@ -2,10 +2,11 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 
   .header__logo {
     font-family: "Francois One", sans-serif;
-    font-size: 38px;
+    font-size: 22px;
     font-weight: 400;
 
     .header__logo-link {
@@ -51,6 +52,23 @@
           cursor: pointer;
         }
       }
+    }
+  }
+}
+
+@media (min-width: 290px) {
+  .header {
+    flex-wrap: unset;
+    .header__logo {
+      font-size: 26px;
+    }
+  }
+}
+
+@media (min-width: 425px) {
+  .header {
+    .header__logo {
+      font-size: 38px;
     }
   }
 }
