@@ -1,0 +1,19 @@
+.main__package {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.package {
+  text-align: center;
+}
+
+.package__item__light {
+  background-color: #e5ecf3;
+}
+
+.package__item__dark {
+  color: #e5ecf3;
+  background-color: #3e556c;
+}
