@@ -1,4 +1,4 @@
-.package__main__block{
+.package__main__block {
   padding: 45px 0px 85px;
 }
 
@@ -51,26 +51,25 @@
   }
 }
 
-
-.alone__package__title{
+.alone__package__title {
   font-size: 21px;
   font-weight: bold;
   padding: 20px 0px 20px;
 }
-.package__price{
+.package__price {
   font-size: 18px;
   color: rgb(82, 172, 254);
 }
-.package__rules{
+.package__rules {
   font-size: 18px;
 }
-.package__title{
+.package__title {
   font-size: 32px;
 }
-.package__description{
+.package__description {
   font-size: 18px;
   padding-bottom: 20px;
 }
-.package__last__text{
+.package__last__text {
   padding-bottom: 20px;
 }
