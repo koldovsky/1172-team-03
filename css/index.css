@@ -9,5 +9,16 @@
 @import url(index.main.welcome-to-paglewaters.css);
 @import url(index.main.wireframe.partial.css);
 @import url(index.main.gallery-section.partial.css);
+@import url(index.main.our-sponsors-section.partial.css);
 @import url(index.main.carousel-testimonials.css);
+<<<<<<< HEAD
 @import url(index.main.carousel-photos-section.css);
+=======
+@import url(index.main.carousel-section.css);
+@import url(index.activities-and-kinds-of-services.css);
+@import url(index.main.events-section.css);
+@import url(index.packages-section.css);
+@import url(index.main.book-your-trip-section.css);
+@import url(index.main.membership-permissions-section.partial.css);
+@import url(index.main.our-location.css);
+>>>>>>> a7b009b03ba32ec2b36f61b75f0a15aa0129c497
