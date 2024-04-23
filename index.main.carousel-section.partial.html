@@ -6,20 +6,16 @@
     <title>Document</title>
   </head>
   <body>
-    <section class="carousel-photos">
+    <section class="carousel-photos container"> 
       <h2 class="carousel-photos_title">Our Guides</h2>
+      <div class="carousel-photos_title-decore">
+        <div class="decore__item"></div>
+        <div class="decore__item"></div>
+        <div class="decore__item"></div>
+        <div class="decore__item"></div>
+      </div>
       <div class="carousel-photos__carousel-slides">
-        <div class="carousel-right">
-          <svg class="arrow-svg_2ub" viewBox="0 0 30 30">
-            <defs>
-              <path
-                d="M19.533 15l-9.1-9.45c-.577-.6-.577-1.5 0-2.1.578-.6 1.445-.6 2.023 0l10.11 10.5c.29.3.434.75.434 1.05 0 .45-.144.75-.433 1.05l-10.111 10.5c-.29.3-.578.45-1.012.45-.433 0-.722-.15-1.01-.45-.578-.6-.578-1.5 0-2.1l9.1-9.45z"
-                id="arrow-path"
-              ></path>
-            </defs>
-            <use fill-rule="nonzero" opacity=".8" href="#arrow-path"></use>
-          </svg>
-        </div>
+        <a class="carousel-photos__arrow-left" href="#"><img src="/image/main.carousel/left.png" alt="left"></a>
         <article class="carousel-photos-slide">
           <img
             class="carousel-photos__slide-image"
@@ -48,11 +44,7 @@
             alt="Slide-4"
           />
         </article>
-        <div class="carousel-left">
-          <svg class="arrow-svg_2ub" viewBox="0 0 30 30">
-            <use fill-rule="nonzero" opacity=".8" href="#arrow-path"></use>
-          </svg>
-        </div>
+        <a class="carousel-photos__arrow-right" href="#"><img src="/image/main.carousel/right.png" alt="right"></a>
       </div>
     </section>
   </body>
