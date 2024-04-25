@@ -12,6 +12,27 @@
     .header__logo-link {
       color: var(--text-color);
       text-decoration: none;
+      .header__keys {
+        display: flex;
+        justify-content: center;
+
+        & kbd {
+          font-family: "Francois One", sans-serif;
+        }
+      }
+
+      .text-brend {
+        & kbd {
+          color: var(--text-brend);
+        }
+        .playing kbd {
+          color: var(--text-highlite-brend);
+        }
+      }
+      .playing {
+        color: var(--text-highlite);
+        font-weight: 900;
+      }
     }
 
     .header__logo-subtext {
