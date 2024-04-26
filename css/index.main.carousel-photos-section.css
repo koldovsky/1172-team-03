@@ -87,5 +87,5 @@
   max-height: 350px;
   position: relative;
   overflow: hidden;
-  transition: transform 0.5s ease; /* Додали анімацію для властивості transform */
+  transition: transform 0.5s ease;
 }
