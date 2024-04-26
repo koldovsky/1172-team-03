@@ -13,7 +13,7 @@ function playSound(e) {
     setTimeout(() => {
       finalMusicsPlayed = true;
       const finalMusicHtml = document.querySelector(".finalMusic");
-      finalMusicHtml.volume = 0.5;
+      finalMusicHtml.volume = 0.4;
       finalMusicHtml.play();
     }, 2000);
   }
