@@ -2,6 +2,7 @@ function init() {
   import("./index.header.partial.js");
   import("./index.main.our-sponsors-section.partial.js");
   import("./index.main.carousel-section.partial.js");
+  import("./index.main.book-now-section.partial");
 }
 
 const totalPartials = document.querySelectorAll(
