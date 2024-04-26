@@ -1,5 +1,6 @@
 function init() {
   import("./index.header.partial.js");
+  import("./index.main.our-sponsors-section.partial.js");
 }
 
 const totalPartials = document.querySelectorAll(
