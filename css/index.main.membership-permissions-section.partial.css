@@ -57,3 +57,20 @@
 .membership-permissions__fisherman_photo {
   max-width: 100%;
 }
+
+@media (min-width: 768px) {
+
+  .membership-permissions {
+    flex-direction: row;
+  }
+
+  .membership-permissions__photo-container {
+    padding-left: 30px;
+    margin-top: 0;
+    max-width: 50%;
+  }
+
+  .membership-permissions__text-n-button-cointainer {
+    max-width: 50%;
+  }
+}
