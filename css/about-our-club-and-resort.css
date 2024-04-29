@@ -28,7 +28,11 @@
 }
 
 .link a {
-  display: inline-block;
+  /* Existing styles */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   text-decoration: none;
   border: 2px solid var(--bg-color-btn-primary);
   color: var(--text-color);
@@ -38,8 +42,12 @@
   height: 45px;
   width: 170px;
   font-size: 14px;
-  text-align: center;
 }
+
+.link a:hover {
+  color: var(--bg-color-btn-primary); /* This color will apply on hover */
+}
+
 .club__dots {
   margin-left: 100;
   margin-right: auto;
@@ -85,3 +93,4 @@
   }
 }
 /*css*/
+
