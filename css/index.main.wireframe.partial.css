@@ -34,7 +34,7 @@
   margin-bottom: 30px;
 }
 
-.decore__item {
+.wireframe-decore__item {
   background-color: var(--text-brend);
   width: 5px;
   height: 100%;
@@ -51,11 +51,11 @@
   line-height: 1.5;
 }
 .fleet-sub-heading {
-  margin-top: 20px; /* Отступ сверху */
+  margin-top: 20px;
     margin-bottom: 20px;
 }
 .fleet-equipment{
-  margin-top: 10px; /* Отступ сверху */
+  margin-top: 10px; 
     margin-bottom: 0px;
 }
 .fleet-container {
@@ -72,6 +72,7 @@
   max-width: 500px; 
   margin-top: 20px;
   margin-bottom: 20px; 
+  }
 
 .fleet-image {
   max-width: 100%; 
