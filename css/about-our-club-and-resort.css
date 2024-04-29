@@ -1,0 +1,96 @@
+/* about-our-club-and-resort.css */
+
+/* Base styles - for mobile devices */
+.body-div {
+  padding: 20px;
+}
+
+.about-our-club-and-resort {
+  display: block; /* Stacks image and content on small screens */
+}
+
+.about-our-club-and-resort img {
+  width: 100%; /* Full width on mobile devices */
+  height: auto; /* Maintain aspect ratio */
+  margin-bottom: 20px; /* Space between image and text */
+}
+
+.main-text {
+  font-size: 1.5em; /* Suitable for mobile */
+  margin-bottom: 0.5em;
+}
+
+.paragraph {
+  font-size: 1em; /* Suitable for mobile */
+  color: #333;
+  line-height: 1.5;
+  margin-bottom: 1em;
+}
+
+.link a {
+  /* Existing styles */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  border: 2px solid var(--bg-color-btn-primary);
+  color: var(--text-color);
+  border-radius: 3px;
+  cursor: pointer;
+  transition: color 0.3s, background-color 0.3s;
+  height: 45px;
+  width: 170px;
+  font-size: 14px;
+}
+
+.link a:hover {
+  color: var(--bg-color-btn-primary); /* This color will apply on hover */
+}
+
+.club__dots {
+  margin-left: 100;
+  margin-right: auto;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  width: 36px;
+  height: 5px;
+  margin-bottom: 30px;
+  .club__dots__dots-decoration {
+    background-color: var(--text-brend);
+    width: 5px;
+  }
+}
+
+/* Medium screens (tablets) */
+@media (min-width: 600px) {
+  .about-our-club-and-resort {
+    display: flex;
+    align-items: flex-start;
+    padding: 20px;
+  }
+
+  .about-our-club-and-resort img {
+    max-width: 50%; /* Adjust the image width as needed */
+    margin-right: 20px; /* Add space between image and content */
+  }
+
+  .about-our-club-content {
+    flex: 1; /* Allows content to fill the space next to the image */
+  }
+}
+
+/* Large screens (desktops) */
+@media (min-width: 992px) {
+  .main-text {
+    font-size: 2em; /* Larger text for larger screens */
+  }
+
+  .link a {
+    display: inline-block; /* Inline-block for desktop */
+    padding: 10px 20px; /* More padding */
+  }
+}
+/*css*/
+
