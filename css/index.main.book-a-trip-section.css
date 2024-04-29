@@ -12,7 +12,7 @@
   align-items: center;
   .book-a-trip__title {
     color: var(--text-color);
-    font-size: 28px;
+    font-size: 30px;
     text-align: center;
     letter-spacing: -0.63px;
     line-height: 35.4px;
@@ -73,7 +73,7 @@
   background-color: var(--text-brend);
   border: 0;
   width: 100%;
-  padding: 14px 34px;
+  padding: 14px 40px;
   margin-top: 56px;
   /*height: 38px;*/
   border-radius: 3px;

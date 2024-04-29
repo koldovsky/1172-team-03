@@ -1,11 +1,13 @@
 .testimonials {
   background: no-repeat 50% 50% / cover
     url(../image/main.testimonials/background.png);
+  min-width: 320px;
   padding-top: 70px;
   padding-bottom: 85px;
 
   .testimonials__container {
     text-align: center;
+    min-width: 320px;
     color: var(--text-color);
     padding-left: 24px;
     padding-right: 24px;
@@ -17,7 +19,6 @@
       .testimonials__title {
         font-size: 30px;
         padding-bottom: 14px;
-        overflow-wrap: anywhere;
       }
 
       .testimonials__title-dots {
@@ -149,13 +150,9 @@
       }
     }
 
-    
-
-    .testimonials__footer {
-      .testimonials__button-all {
-        margin-top: 50px;
-        width: 180px;
-      }
+    .testimonials__button {
+      margin-top: 50px;
+      width: 180px;
     }
   }
 }
