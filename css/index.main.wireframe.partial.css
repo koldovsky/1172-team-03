@@ -34,7 +34,7 @@
   margin-bottom: 30px;
 }
 
-.decore__item {
+.wireframe-decore__item {
   background-color: var(--text-brend);
   width: 5px;
   height: 100%;
@@ -47,7 +47,7 @@
 .half-container {
   padding: 20px;
 }
-.container {
+.container-hot {
   line-height: 1.5;
 }
 .fleet-sub-heading {
@@ -58,7 +58,7 @@
   margin-top: 10px; /* Отступ сверху */
     margin-bottom: 0px;
 }
-.container {
+.container-hot {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -72,6 +72,7 @@
   max-width: 500px; 
   margin-top: 20px;
   margin-bottom: 20px; 
+}
 
 .fleet-image {
   max-width: 100%; 
