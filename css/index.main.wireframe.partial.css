@@ -51,11 +51,11 @@
   line-height: 1.5;
 }
 .fleet-sub-heading {
-  margin-top: 20px;
+  margin-top: 20px; /* Отступ сверху */
     margin-bottom: 20px;
 }
 .fleet-equipment{
-  margin-top: 10px; 
+  margin-top: 10px; /* Отступ сверху */
     margin-bottom: 0px;
 }
 .container-hot {
