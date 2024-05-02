@@ -47,7 +47,7 @@
 .half-container {
   padding: 20px;
 }
-.container {
+.fleet-container {
   line-height: 1.5;
 }
 .fleet-sub-heading {
@@ -58,7 +58,7 @@
   margin-top: 10px; /* Отступ сверху */
     margin-bottom: 0px;
 }
-.container {
+.fleet-container {
   display: flex;
   justify-content: center;
   align-items: center;
