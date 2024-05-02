@@ -3,6 +3,7 @@ function init() {
   import("./index.main.our-sponsors-section.partial.js");
   import("./index.main.carousel-section.partial.js");
   import("./index.main.book-now-section.partial");
+  import("./index.main.testimonials-carousel-section.partial");
 }
 
 const totalPartials = document.querySelectorAll(
