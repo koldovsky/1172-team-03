@@ -53,8 +53,6 @@
   }
 }
 
-/*---------------------------------------------------------------------------countdown*/
-
 .book-now__countdown {
   display: flex;
   gap: 45px;
@@ -99,8 +97,6 @@
     padding: 15px;
   }
 }
-/*margin-right: 320px;*/
-/*margin-left: 320px;*/
 
 .book-now__countdown-days p {
   padding-right: 20px;

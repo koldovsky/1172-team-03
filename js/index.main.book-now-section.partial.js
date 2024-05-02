@@ -1,4 +1,4 @@
-const customDate = "13 december 2025  00:00 AM";
+const customDate = "13 december 2025 00:00 AM";
 
 function clock() {
   let end = new Date(customDate);

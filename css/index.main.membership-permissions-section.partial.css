@@ -58,6 +58,7 @@
   max-width: 100%;
 }
 
+
 @media (min-width: 768px) {
 
   .membership-permissions {
@@ -65,12 +66,13 @@
   }
 
   .membership-permissions__photo-container {
-    padding-left: 30px;
+    padding: 0 15px;
     margin-top: 0;
     max-width: 50%;
   }
 
   .membership-permissions__text-n-button-cointainer {
     max-width: 50%;
+    padding: 0 15px;
   }
 }

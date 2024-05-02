@@ -54,7 +54,7 @@ body {
   color: var(--text-color);
 }
 
-.club__dots {
+.activities__dots {
   margin-left: auto;
   margin-right: auto;
   margin-top: 20px;
@@ -63,7 +63,7 @@ body {
   width: 36px;
   height: 5px;
   margin-bottom: 30px;
-  .club__dots__dots-decoration {
+  .activities__dots__dots-decoration {
     background-color: var(--text-brend);
     width: 5px;
   }
