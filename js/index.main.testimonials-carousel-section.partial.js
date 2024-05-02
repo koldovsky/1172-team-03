@@ -24,12 +24,22 @@ const slides = [
     "</div>",
 ];
 
+const dotsNav = document.querySelector(".testimonials__carousel-dots");
+const dots = Array.from(dotsNav.children);
+
 let currentSlideIdx = 0;
 
 function renderSlide() {
   adjustClientsMinHeight();
+
   const slideContainer = document.querySelector(".testimonials__clients");
   slideContainer.innerHTML = slides[currentSlideIdx];
+
+  dots.forEach((dot) => dot.classList.remove("active"));
+
+  if (dots[currentSlideIdx]) {
+    dots[currentSlideIdx].classList.add("active");
+  }
 }
 
 function nextSlide() {
@@ -77,3 +87,14 @@ function adjustClientsMinHeight() {
 
   testimonialsContainer.style.minHeight = `${maxClientHeight + otherHeights}px`;
 }
+
+dotsNav.addEventListener("click", (e) => {
+  const targetDot = e.target.closest("span");
+
+  if (!targetDot) return;
+
+  const targetIndex = dots.findIndex((dot) => dot === targetDot);
+  currentSlideIdx = targetIndex;
+
+  renderSlide();
+});
