@@ -2,8 +2,8 @@ function init() {
   import("./index.header.partial.js");
   import("./index.main.our-sponsors-section.partial.js");
   import("./index.main.carousel-section.partial.js");
-  import("./index.main.book-now-section.partial");
-  import("./index.main.testimonials-carousel-section.partial");
+  import("./index.main.book-now-section.partial.js");
+  import("./index.main.testimonials-carousel-section.partial.js");
 }
 
 const totalPartials = document.querySelectorAll(
@@ -15,3 +15,4 @@ document.body.addEventListener("htmx:afterOnLoad", () => {
   loadedPartialsCount++;
   if (loadedPartialsCount === totalPartials) init();
 });
+
