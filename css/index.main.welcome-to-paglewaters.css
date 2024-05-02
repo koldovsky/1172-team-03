@@ -5,12 +5,12 @@
   padding-bottom: 75px;
 }
 .paglewaters__title {
-  font-size: 32px;
+  font-size: 23px;
   color: var(--text-color);
   padding-bottom: 28px;
 }
 .paglewaters__blue-text-title {
-  font-size: 32px;
+  font-size: 23px;
   color: var(--text-brend);
 }
 .paglewaters__text {
@@ -33,5 +33,16 @@
   .paglewaters__dots__dots-decoration {
     background-color: var(--text-brend);
     width: 5px;
+  }
+}
+
+@media (min-width: 425px) {
+  .paglewaters {
+    .paglewaters__title {
+      font-size: 32px;
+      .paglewaters__blue-text-title {
+        font-size: 32px;
+      }
+    }
   }
 }
