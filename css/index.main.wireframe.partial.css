@@ -51,12 +51,12 @@
   line-height: 1.5;
 }
 .fleet-sub-heading {
-  margin-top: 20px;
-    margin-bottom: 20px;
+  margin-top: 20px; /* Отступ сверху */
+  margin-bottom: 20px;
 }
-.fleet-equipment{
-  margin-top: 10px; 
-    margin-bottom: 0px;
+.fleet-equipment {
+  margin-top: 10px; /* Отступ сверху */
+  margin-bottom: 0;
 }
 .container-hot {
   display: flex;
@@ -65,30 +65,32 @@
   flex-direction: column;
 }
 
-.half-container, .half-half-container {
+.half-container,
+.half-half-container {
   background-color: var(--background-dark-color);
   padding: 20px;
-  width: 100%; 
-  max-width: 500px; 
+  width: 100%;
+  max-width: 500px;
   margin-top: 20px;
-  margin-bottom: 20px; 
+  margin-bottom: 20px;
 }
 
 .fleet-image {
-  max-width: 100%; 
+  max-width: 100%;
   height: auto;
 }
 
 .fleet-sub-heading {
-  margin-top: 20px; 
-  margin-bottom: 20px; 
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 @media screen and (max-width: 320px) {
   .container {
-    max-width: 100%; 
+    max-width: 100%;
   }
-  
-  .half-container, .half-half-container {
-    max-width: 100%; 
+
+  .half-container,
+  .half-half-container {
+    max-width: 100%;
   }
 }
