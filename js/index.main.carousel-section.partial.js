@@ -1,4 +1,9 @@
-const images = ["classes-slide-1.jpg", "classes-slide-2.jpg", "classes-slide-3.jpg", "classes-slide-4.jpg"];
+const images = [
+  "classes-slide-1.jpg",
+  "classes-slide-2.jpg",
+  "classes-slide-3.jpg",
+  "classes-slide-4.jpg",
+];
 const imagePath = "./image/main.carousel/";
 let activeImage = 0;
 const sliderPlace = document.querySelector(".slider-line");
@@ -28,16 +33,20 @@ const prewImageGenerate = () => {
 
 const nextSlide = () => {
   activeImage = (activeImage + 1) % images.length;
-  document.querySelector('.slider-line img').remove();
+  document.querySelector(".slider-line img").remove();
   nextImageGenerate();
 };
 
 const prewSlide = () => {
   activeImage = (activeImage - 1 + images.length) % images.length;
-  document.querySelector('.slider-line img:last-child').remove();
+  document.querySelector(".slider-line img:last-child").remove();
   prewImageGenerate();
 };
 
 initSlider();
-document.querySelector(".our-guides__right-arrow").addEventListener("click", nextSlide);
-document.querySelector(".our-guides__left-arrow").addEventListener("click", prewSlide);
+document
+  .querySelector(".our-guides__right-arrow")
+  .addEventListener("click", nextSlide);
+document
+  .querySelector(".our-guides__left-arrow")
+  .addEventListener("click", prewSlide);
