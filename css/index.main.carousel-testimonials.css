@@ -150,6 +150,10 @@
       .testimonials__button-all {
         margin-top: 50px;
         width: 180px;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
       }
     }
   }
