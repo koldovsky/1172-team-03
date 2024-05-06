@@ -44,9 +44,9 @@ const prewSlide = () => {
 };
 
 initSlider();
-document
-  .querySelector(".our-guides__right-arrow")
-  .addEventListener("click", nextSlide);
-document
-  .querySelector(".our-guides__left-arrow")
-  .addEventListener("click", prewSlide);
+
+const leftArrow = document.querySelector(".our-guides__left-arrow");
+const rightArrow = document.querySelector(".our-guides__right-arrow");
+
+leftArrow.addEventListener("click", prewSlide);
+rightArrow.addEventListener("click", nextSlide);
