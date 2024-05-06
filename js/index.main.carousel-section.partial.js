@@ -1,45 +1,52 @@
-let currentSlideIndex = 0;
-let visibleSlides = 1;
+const images = [
+  "classes-slide-1.jpg",
+  "classes-slide-2.jpg",
+  "classes-slide-3.jpg",
+  "classes-slide-4.jpg",
+];
+const imagePath = "./image/main.carousel/";
+let activeImage = 0;
+const sliderPlace = document.querySelector(".slider-line");
+
+const generateImage = (imageName) => {
+  const img = document.createElement("img");
+  img.alt = "";
+  img.src = imagePath + imageName;
+  return img;
+};
+
+const initSlider = () => {
+  sliderPlace.appendChild(generateImage(images[activeImage]));
+  nextImageGenerate();
+  prewImageGenerate();
+};
+
+const nextImageGenerate = () => {
+  let nextImageIndex = (activeImage + 1) % images.length;
+  sliderPlace.appendChild(generateImage(images[nextImageIndex]));
+};
+
+const prewImageGenerate = () => {
+  let prewImageIndex = (activeImage - 1 + images.length) % images.length;
+  sliderPlace.prepend(generateImage(images[prewImageIndex]));
+};
+
+const nextSlide = () => {
+  activeImage = (activeImage + 1) % images.length;
+  document.querySelector(".slider-line img").remove();
+  nextImageGenerate();
+};
+
+const prewSlide = () => {
+  activeImage = (activeImage - 1 + images.length) % images.length;
+  document.querySelector(".slider-line img:last-child").remove();
+  prewImageGenerate();
+};
+
+initSlider();
 
 const leftArrow = document.querySelector(".our-guides__left-arrow");
 const rightArrow = document.querySelector(".our-guides__right-arrow");
-const carousel = document.querySelector(".our-guides__carusel");
 
-function updateCarousel() {
-  const slideWidth = carousel.children[0].offsetWidth;
-  const offset = -slideWidth * currentSlideIndex;
-  carousel.style.transform = `translateX(${offset}px)`;
-}
-
-function updateVisibleSlides() {
-  if (window.innerWidth <= 600) {
-    visibleSlides = 1;
-  } else if (window.innerWidth <= 900) {
-    visibleSlides = 2;
-  } else {
-    visibleSlides = 3;
-  }
-  updateCarousel();
-}
-
-rightArrow.addEventListener("click", function (event) {
-  event.preventDefault();
-  currentSlideIndex += visibleSlides;
-  if (currentSlideIndex >= carousel.children.length) {
-    currentSlideIndex = 0;
-  }
-  updateCarousel();
-});
-
-leftArrow.addEventListener("click", function (event) {
-  event.preventDefault();
-  currentSlideIndex -= visibleSlides;
-  if (currentSlideIndex < 0) {
-    currentSlideIndex = Math.max(carousel.children.length - visibleSlides, 0);
-  }
-  updateCarousel();
-});
-
-updateVisibleSlides();
-
-window.addEventListener("resize", updateVisibleSlides);
+leftArrow.addEventListener("click", prewSlide);
+rightArrow.addEventListener("click", nextSlide);

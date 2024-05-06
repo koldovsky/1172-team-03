@@ -59,18 +59,18 @@
 }
 
 @media (min-width: 768px) {
-
   .membership-permissions {
     flex-direction: row;
   }
 
   .membership-permissions__photo-container {
-    padding-left: 30px;
+    padding: 0 15px;
     margin-top: 0;
     max-width: 50%;
   }
 
-  .membership-permissions__text-n-button-cointainer {
+  .membership-permissions__text-n-button-container {
     max-width: 50%;
+    padding: 0 15px;
   }
 }

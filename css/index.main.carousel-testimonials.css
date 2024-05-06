@@ -74,10 +74,11 @@
 
       .testimonials__clients {
         max-width: 580px;
+        min-height: 311px;
 
         .testimonials__client {
           display: flex;
-          justify-content: center;
+          justify-content: normal;
           align-items: center;
           flex-direction: column;
           line-height: 1.5;
@@ -114,10 +115,6 @@
             margin-top: 20px;
           }
         }
-
-        .client__no-display {
-          display: none;
-        }
       }
 
       .testimonials__carousel-dots {
@@ -148,8 +145,6 @@
         }
       }
     }
-
-    
 
     .testimonials__footer {
       .testimonials__button-all {
