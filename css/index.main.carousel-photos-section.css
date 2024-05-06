@@ -1,5 +1,5 @@
 .our-guides {
-  max-width: 95%;
+  /*max-width: 95%;*/
   margin: 20px;
 }
 .our-guides h2 {
@@ -61,7 +61,7 @@
 }
 .product-carousel {
   position: relative;
-  width: 80%;
+  /*width: 80%;*/
   margin: auto;
 }
 .slider-line {
