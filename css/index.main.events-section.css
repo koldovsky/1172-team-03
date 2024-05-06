@@ -24,29 +24,44 @@
   position: absolute;
   top: 0;
   left: 0;
+  
+}
+
+.event__block__title {
+  font-size: 32px;
 }
 
 .event__dates {
   font-size: 12px;
+  text-align: left;
 }
 
 .event__title {
   font-size: 22px;
   font-weight: bold;
+  text-align: left;
+  padding-top: 7px;
+  padding-bottom: 7px;
 }
 
 .event__description {
   font-size: 16px;
+  text-align: left;
+  padding-top: 7px;
+  padding-bottom: 7px;
 }
 
 .event__link {
   color: rgb(82, 172, 254);
+  text-align: left;
+  padding-top: 7px;
 }
 
 .event__general__title {
   display: flex;
   text-align: center;
   flex-direction: column;
+  padding: 85px 0px 40px;
 
   .event__points {
     color: rgb(82, 172, 254);
@@ -63,5 +78,20 @@
 @media (min-width: 992px) {
   .event__section {
     grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.event__dots {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  width: 36px;
+  height: 5px;
+  margin-bottom: 30px;
+  .event__dots__dots-decoration {
+    background-color: var(--text-brend);
+    width: 5px;
   }
 }
