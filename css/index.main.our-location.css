@@ -4,3 +4,72 @@
     height: 400px;
   }
 }
+
+.our-location__dots {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+  width: 36px;
+  height: 5px;
+  margin-bottom: 30px;
+  
+}
+
+.our-location__dots-decoration {
+  background-color: #52acfe;
+  width: 5px;
+}
+
+.our-location__h2 {
+  text-align: center;
+  padding-top: 45px;
+  padding-bottom: 25px;
+  font-size: 2rem;
+}
+
+.our-location__classes{
+  background-color: var(--background-dark-color);
+  min-height: 500px;
+  color: var(--text-color);
+}
+
+.our-location__tel{
+  color: var(--text-color);
+}
+
+.our-location__mail{
+  color: var(--text-color);
+}
+
+.our-location__h3,
+.our-location__h4,
+.our-location__h5 {
+  font-size: 1.3rem; 
+  padding: 20px;
+}
+
+.our-location__p,
+.our-location__tel,
+.our-location__mail{
+  padding: 15px;
+}
+
+
+
+
+.our-location__container {
+  display: flex;
+  flex-direction: row; /* Устанавливаем направление горизонтальное */
+  align-items: flex-start; /* Выравниваем элементы по верхнему краю */
+}
+
+.our-location__map {
+  flex: 1; /* Занимает всю доступную ширину */
+}
+
+
+  
+
+
+
