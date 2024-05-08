@@ -1,6 +1,78 @@
-.section__map {
-  & > iframe {
-    width: 100%;
-    height: 400px;
+.our-location__dots {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+  width: 36px;
+  height: 5px;
+  margin-bottom: 30px;
+}
+
+.our-location__dots-decoration {
+  background-color: #52acfe;
+  width: 5px;
+}
+
+.our-location__h2 {
+  text-align: center;
+  padding-top: 45px;
+  padding-bottom: 25px;
+  font-size: 2rem;
+}
+
+.our-location__classes {
+  background-color: var(--background-dark-color);
+  min-height: 550px;
+  color: var(--text-color);
+}
+
+.our-location__tel {
+  color: var(--text-color);
+}
+
+.our-location__mail {
+  color: var(--text-color);
+}
+
+.our-location__h3,
+.our-location__h4,
+.our-location__h5 {
+  font-size: 1.3rem;
+  padding: 25px;
+  padding-left: 100px;
+}
+
+.our-location__p,
+.our-location__tel,
+.our-location__mail {
+  padding: 25px;
+  padding-left: 100px;
+}
+
+.our-location__container2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex: 1;
+}
+
+.our-location__map {
+  width: 100%;
+  height: 550px;
+}
+
+.our-location__iframe {
+  width: 100%;
+  height: 75%;
+  padding: 30px;
+}
+
+@media (min-width: 600px) {
+  .our-location__container2 {
+    flex-direction: row;
+  }
+  .our-location__iframe {
+    padding-right: 100px;
   }
 }
+

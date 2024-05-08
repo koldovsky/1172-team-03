@@ -1,1 +1,64 @@
+.book-your-trip__classes {
+  background-size: cover;
+  background-color: #263a4f;
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+}
 
+.book-your-trip__title {
+  margin-bottom: 20px;
+  font-size: 200%;
+}
+
+.book-your-trip____text {
+  font-weight: normal;
+}
+
+.book-your-trip__button {
+  display: inline-block;
+  font-size: 14px;
+  padding: 7px 25px;
+  margin-top: 50px;
+  border: 2px;
+  cursor: pointer;
+  text-decoration: none;
+  background-color: var(--text-brend);
+  color: white;
+  border-radius: 3px;
+  height: 42px;
+  width: 134px;
+  box-shadow: 0px 4px 8px var(--shadow-color);
+}
+.book-your-trip__button:hover {
+  background-color: white;
+  color: #263a4f;
+}
+
+.book-your-trip__dots {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+  width: 36px;
+  height: 5px;
+  margin-bottom: 30px;
+}
+
+.book-your-trip__dots-decoration {
+  background-color: white;
+  width: 5px;
+}
+
+.book-your-trip__banner {
+  background: linear-gradient(rgba(38, 58, 79, 0.8), rgba(38, 58, 79, 0.8)),
+    url(../image/main.book-your-trip/fone.jpeg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 234px;
+  background-attachment: fixed;
+}
