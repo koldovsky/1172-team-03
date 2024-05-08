@@ -22,18 +22,7 @@
   margin-top: 30px;
 }
 .book-now__get-deal-btn {
-  display: inline-block;
-  font-size: 14px;
-  padding: 7px 25px;
   margin-top: 50px;
-  border: 2px;
-  cursor: pointer;
-  text-decoration: none;
-  background-color: var(--text-brend);
-  color: white;
-  border-radius: 3px;
-  height: 42px;
-  width: 134px;
 }
 .book-now__get-deal-btn:hover {
   background-color: var(--text-color);

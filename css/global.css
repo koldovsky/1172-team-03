@@ -28,6 +28,7 @@
   --text-highlite: #991a1a;
   --text-highlite-brend: #072c50;
   --bg-color-btn-primary: #52acfe;
+  --bg-color-btn-acent: #18568c;
   --bg-color-black: rgb(32, 43, 56);
   --bg-color-white: #ffff;
   --background-dark-color: #e5ecf3;
@@ -57,6 +58,10 @@ img {
   width: 100%;
   max-width: var(--container-size);
   margin: 0 auto;
+}
+
+.overflow-hidden {
+  overflow: hidden;
 }
 
 @media (max-width: 989px) {

@@ -1,3 +1,6 @@
+const body = document.querySelector("body");
+const header = document.querySelector(".header");
+
 const slides = [
   '<div class="testimonials__client">' +
     '<div class="client__image client__image-1"></div>' +
@@ -67,7 +70,7 @@ window.addEventListener("resize", adjustClientsMinHeight());
 function adjustClientsMinHeight() {
   const testimonialsClients = document.querySelector(".testimonials__clients");
   const testimonialsContainer = document.querySelector(
-    ".testimonials__container"
+    ".testimonials__container",
   );
 
   const clientElements = document.querySelectorAll(".testimonials__client");
@@ -98,3 +101,29 @@ dotsNav.addEventListener("click", (e) => {
 
   renderSlide();
 });
+
+onload = function () {
+  setBtnSize();
+};
+
+window.onresize = function () {
+  setBtnSize();
+};
+
+function setBtnSize() {
+  const width = window.innerWidth;
+  const btn = document.querySelector(".testimonials__footer > button");
+
+  if (width < 290) {
+    btn.classList.add("button_sm");
+    btn.classList.remove("button_md");
+  } else {
+    btn.classList.add("button_md");
+    btn.classList.remove("button_sm");
+  }
+
+  if (width > 990) {
+    body.classList.remove("overflow-hidden");
+    header.classList.remove("nav-visible");
+  }
+}
