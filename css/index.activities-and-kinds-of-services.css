@@ -1,11 +1,8 @@
-body {
-  font-family: "Noto Sans", sans-serif;
-  color: var(--text-color);
-}
-
 .activities-and-kinds-of-services {
   padding: 20px;
   text-align: center;
+  font-family: "Noto Sans", sans-serif;
+  color: var(--text-color);
 }
 
 .activity-header {
@@ -55,14 +52,12 @@ body {
 }
 
 .activities__dots {
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 20px;
+  margin: 20px auto 30px auto;
   display: flex;
   justify-content: space-between;
   width: 36px;
   height: 5px;
-  margin-bottom: 30px;
+
   .activities__dots__dots-decoration {
     background-color: var(--text-brend);
     width: 5px;
@@ -94,4 +89,3 @@ body {
     justify-content: center;
   }
 }
-/*css*/

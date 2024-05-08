@@ -75,15 +75,14 @@
   width: 100%;
   padding: 14px 34px;
   margin-top: 56px;
-  /*height: 38px;*/
   border-radius: 3px;
-  box-shadow: 0px 4px 8px var(--shadow-color);
-  transition: 0.5s ;
+  box-shadow: 0 4px 8px var(--shadow-color);
+  transition: 0.5s;
   cursor: pointer;
 }
 
-.book-a-trip__submit:hover{
-  background-color: var(--bg-color-black) ;
+.book-a-trip__submit:hover {
+  background-color: var(--bg-color-black);
 }
 
 .book-a-trip__image {

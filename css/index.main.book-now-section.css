@@ -18,7 +18,7 @@
 }
 .book-now__expire-date {
   font-size: 18px;
-  color: #263a4f;
+  color: var(--text-color);
   margin-top: 30px;
 }
 .book-now__get-deal-btn {
