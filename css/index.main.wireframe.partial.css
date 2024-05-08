@@ -1,16 +1,18 @@
+/* Our Fleet styles */
 .Our-Fleet {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 40px 0 85px 0;
   line-height: 1.5;
-  word-wrap: break-word;
 }
 
+/* Fleet container styles */
 .fleet_container {
   text-align: center;
 }
 
+/* Section heading styles */
 .section-heading {
   display: flex;
   flex-direction: column;
@@ -18,14 +20,14 @@
   align-items: center;
 }
 
+/* Fleet heading styles */
 .fleet-heading {
   padding: 10px 15px;
-  max-width: 100%;
   font-size: 2.5rem;
   font-weight: bold;
-  text-align: center;
 }
 
+/* Fleet description styles */
 .fleet-description {
   display: flex;
   justify-content: center;
@@ -35,63 +37,152 @@
   margin-bottom: 30px;
 }
 
+/* Decorative elements styles */
 .wireframe-decore__item {
-  background-color: var(--text-brend); 
+  background-color: var(--text-brend);
   width: 5px;
   height: 100%;
   margin: 0 5px;
 }
 
-.info-section p {
-  margin-bottom: 40px;
+/* Half-container styles */
+.half-container, .half-half-container {
+  background-color: var(--background-dark-color);
+  padding: 20px;
+  flex-grow: 1;
+  width: 100%;
+  margin: 20px;
+  margin-left: 20px;
+  width: calc(40% - 60px);
 }
 
-.half-container {
+/* Legend section styles */
+.legend-section {
+  margin-left: 20px;
   padding: 20px;
 }
 
-.container-hot {
-  line-height: 1.5;
+/* Princess section styles */
+.half-half-container .section-princess {
+  margin-left: 20px;
+  padding: 20px;
 }
 
-.fleet-sub-heading {
+/* Headings styles */
+.fleet-sub-heading, .fleet-sub-heading-text, .fleet-equipment-label , .fleet-sub-heading {
+
   margin-top: 20px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  padding-bottom: 20px;
+}
+
+
+/* Additional text styles */
+.fleet-sub-heading-text {
+  margin-top: -10px;
+}
+
+/* Fleet equipment label styles */
+.fleet-info-label {
+  font-weight: bold;
+}
+
+/* Fleet equipment styles */
+.fleet-equipment {
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+.fleet-sub-heading {
+  padding-bottom: 20px;
+}
+/* Fleet image styles */
+.fleet-image {
+  max-width: 100%;
+  height: auto;
   margin-bottom: 20px;
 }
 
-.fleet-equipment {
-  margin-top: 10px; /* Исправлено на отсутствие пробела */
-  margin-bottom: 0px;
+/* Media queries */
+
+/* For screens up to 320px */
+@media screen and (max-width: 320px) {
+  .container-fullwidth, .half-container, .half-half-container {
+    max-width: 100%;
+    margin-left: 0; /* Виправлено відступи для контейнерів */
+    width: 100%; /* Виправлено ширину контейнерів */
+    margin-bottom: 20px; /* Додано зовнішній відступ знизу */
+  }
 }
 
-.container-hot {
+@media screen and (max-width: 678px) {
+  .container-fullwidth, .half-container, .half-half-container {
+    max-width: 100%;
+    margin-left: 0; /* Виправлено відступи для контейнерів */
+    width: 100%; /* Виправлено ширину контейнерів */
+    margin-bottom: 20px; /* Додано зовнішній відступ знизу */
+  }
+}
+@media screen and (min-width: 679px) {
+  .container-fullwidth, .half-container, .half-half-container {
+    max-width: initial; /* Повертаємо максимальну ширину до значення за замовчуванням */
+    width: initial; /* Повертаємо ширину до значення за замовчуванням */
+    margin-bottom: initial; /* Повертаємо зовнішній відступ до значення за замовчуванням */
+  }
+}
+@media screen and (min-width: 1001px) and (max-width: 1200px) {
+  .container-fullwidth, .half-container, .half-half-container {
+    max-width: calc(100% - 40px); /* 20px відступи з кожного боку */
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+}
+/* For full-width container */
+.container-fullwidth {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-}
-
-.half-container, .half-half-container {
-  background-color: var(--background-dark-color);
-  padding: 20px;
+  flex-wrap: wrap;
   width: 100%;
-  max-width: 500px;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  max-width: 100vw;
+  margin: 40px 0;
+  padding: 0 20px;
+  overflow-x: hidden;
 }
 
-.fleet-image {
-  max-width: 100%;
-  height: auto;
-}
-
-.fleet-sub-heading {
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
-@media screen and (max-width: 320px) {
-  .container-hot, .half-container, .half-half-container {
-    max-width: 100%;
+/* For screens above 1200px */
+@media screen and (min-width: 1200px) {
+  .half-container, .half-half-container {
+    width: 80%;
+    margin-right: 20px;
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    justify-content: space-between;
+    flex-direction: row;
   }
+
+  .half-container img, .half-half-container img {
+    max-width: 30%;
+  }
+
+  .half-container .heading-section, .half-half-container .custom-heading {
+    flex-grow: 1;
+    text-align: right;
+    margin-left: 20px;
+  }
+
+  .half-container .fleet-image, .half-half-container .fleet-image {
+    order: -1;
+  }
+}
+
+/* Wireframe footer styles */
+.wireframe_footer {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
 }
