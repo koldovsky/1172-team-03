@@ -9,7 +9,7 @@
 }
 
 .our-location__dots-decoration {
-  background-color: #52acfe;
+  background-color: var(--text-brend);
   width: 5px;
 }
 

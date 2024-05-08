@@ -1,7 +1,7 @@
 .book-your-trip__classes {
   background-size: cover;
   background-color: var(--text-color);
-  color: white;
+  color: var(--text-color-light);
   text-align: center;
   padding: 100px 20px;
 }
@@ -24,14 +24,14 @@
   cursor: pointer;
   text-decoration: none;
   background-color: var(--text-brend);
-  color: white;
+  color: var(--text-color-light);
   border-radius: 3px;
   height: 42px;
   width: 134px;
   box-shadow: 0 4px 8px var(--shadow-color);
 }
 .book-your-trip__button:hover {
-  background-color: white;
+  background-color: var(--text-color-light);
   color: #263a4f;
 }
 
