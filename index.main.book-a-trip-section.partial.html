@@ -20,7 +20,11 @@
             Complete the form below and we will contact you as soon as we can!
           </p>
           <div class="book-a-trip__form">
-            <form action="#" method="post">
+            <form
+              id="book-a-trip-form"
+              action="https://formspree.io/f/xvoeypzk"
+              method="POST"
+            >
               <input
                 type="text"
                 class="book-a-trip__input"
@@ -50,10 +54,12 @@
                 placeholder="Message"
               ></textarea>
               <input
+                id="book-a-trip-form-button"
                 type="submit"
                 class="book-a-trip__submit"
                 value="Book a trip"
               />
+              <p id="book-a-trip-form-status"></p>
             </form>
           </div>
         </div>

@@ -93,6 +93,24 @@
   object-position: center;
 }
 
+#book-a-trip-form-status {
+  font-size: 18px;
+  letter-spacing: normal;
+  line-height: 27px;
+  transition: 1s;
+  margin: 0 auto;
+  margin-top: 20px;
+  display: block;
+}
+
+.successful-message {
+  color: var(--text-brend);
+}
+
+.error-message {
+  color: var(--bg-color-black);
+}
+
 @media (min-width: 768px) {
   .book-a-trip__section {
     flex-direction: row;
