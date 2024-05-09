@@ -122,9 +122,7 @@
         justify-content: space-around;
         width: 76px;
         height: 25px;
-        margin: auto;
-        margin-top: 20px;
-        margin-bottom: 24px;
+        margin: 20px auto 24px;
         cursor: pointer;
 
         .carousel-dot {
