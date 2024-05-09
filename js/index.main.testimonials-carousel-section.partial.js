@@ -112,7 +112,9 @@ window.onresize = function () {
 
 function setBtnSize() {
   const width = window.innerWidth;
-  const btn = document.querySelector(".testimonials__footer > button");
+  const btn = document.querySelector(
+    ".testimonials__footer .testimonials__button-all",
+  );
 
   if (width < 290) {
     btn.classList.add("button_sm");
