@@ -6,6 +6,7 @@ function init() {
   import("./index.main.testimonials-carousel-section.partial.js");
   import("./index.main.join-us-section.partial.js");
   import("./index.main.book-a-trip-section.partial.js");
+  import("./index.main.gallery-section.partial.js");
 }
 
 const totalPartials = document.querySelectorAll(

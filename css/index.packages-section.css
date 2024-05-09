@@ -17,17 +17,20 @@
 
 .package__item__light {
   background-color: #e5ecf3;
+  padding: 10px;
 }
 
 .package__item__dark {
   color: #e5ecf3;
   background-color: #3e556c;
+  padding: 10px;
 }
 
 @media (min-width: 768px) {
   .main__package {
     grid-template-columns: 1fr 1fr;
   }
+  
 }
 
 @media (min-width: 992px) {
