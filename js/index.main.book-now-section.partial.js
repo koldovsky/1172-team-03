@@ -25,3 +25,9 @@ clock();
 setInterval(() => {
   clock();
 }, 1000);
+
+const btn = document.querySelector("button.book-now__get-deal-btn");
+btn.addEventListener("click", () => {
+  const bookTripSection = document.getElementById("book-a-trip-section");
+  bookTripSection.scrollIntoView({ behavior: "smooth" });
+});

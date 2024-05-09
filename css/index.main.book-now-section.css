@@ -25,6 +25,7 @@
 .book-now__get-deal-btn {
   margin-top: 50px;
   box-shadow: 0 4px 8px var(--shadow-color);
+  width: 140px;
 }
 .book-now__get-deal-btn:hover {
   background-color: var(--text-color);
