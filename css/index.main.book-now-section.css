@@ -5,15 +5,16 @@
 .book-now__paragraph {
   font-size: 32px;
   padding-bottom: 28px;
-  color: #263a4f;
+  color: var(--text-color);
 }
 .book-now__countdown {
   padding-left: 32px;
   padding-right: 32px;
+  color: var(--text-color);
 }
 .book-now__countdown-description {
   font-size: 27px;
-  color: #263a4f;
+  color: var(--text-color);
   margin-top: 20px;
 }
 .book-now__expire-date {
@@ -69,6 +70,16 @@
   padding: 30px;
 }
 
+.book-now__countdown-days p {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.book-now__countdown-hours p {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
 @media only screen and (max-width: 768px) {
   .book-now__countdown {
     flex-direction: column;
@@ -86,14 +97,4 @@
   .book-now__countdown-box {
     padding: 15px;
   }
-}
-
-.book-now__countdown-days p {
-  padding-right: 20px;
-  padding-left: 20px;
-}
-
-.book-now__countdown-hours p {
-  padding-right: 15px;
-  padding-left: 15px;
 }
