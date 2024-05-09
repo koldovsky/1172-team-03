@@ -44,3 +44,20 @@ function allLettersWithPlayingClass() {
     letter.classList.contains("playing"),
   );
 }
+
+onload = function () {
+  changeNavVisible();
+};
+
+window.onresize = function () {
+  changeNavVisible();
+};
+
+function changeNavVisible() {
+  const width = window.innerWidth;
+
+  if (width > 990) {
+    body.classList.remove("overflow-hidden");
+    header.classList.remove("nav-visible");
+  }
+}

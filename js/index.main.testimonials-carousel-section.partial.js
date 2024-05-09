@@ -101,31 +101,3 @@ dotsNav.addEventListener("click", (e) => {
 
   renderSlide();
 });
-
-onload = function () {
-  setBtnSize();
-};
-
-window.onresize = function () {
-  setBtnSize();
-};
-
-function setBtnSize() {
-  const width = window.innerWidth;
-  const btn = document.querySelector(
-    ".testimonials__footer .testimonials__button-all",
-  );
-
-  if (width < 290) {
-    btn.classList.add("button_sm");
-    btn.classList.remove("button_md");
-  } else {
-    btn.classList.add("button_md");
-    btn.classList.remove("button_sm");
-  }
-
-  if (width > 990) {
-    body.classList.remove("overflow-hidden");
-    header.classList.remove("nav-visible");
-  }
-}
