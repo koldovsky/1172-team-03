@@ -130,10 +130,7 @@
 .gallery__footer {
   margin-top: 50px;
 
-  .gallery__link {
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  .button-secondary {
+    background-color: var(--bg-color-white);
   }
 }
